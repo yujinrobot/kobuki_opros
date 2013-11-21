@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<service_port_type_profile>
+  <service_port_type>
+    <type_name>BtnArrayStateService</type_name>
+    <method name="GetBtnArrayState" return_type="std::vector&lt;OPRoS::Bool&gt;" call_type="blocking" />
+  </service_port_type>
+</service_port_type_profile>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<component_profile>
+	<id>86bade91-41a0-4b5a-8f1f-be34857b98a7</id>
+	<name>KobukiWheelDropSensorComp</name>
+	<version>1.1</version>
+	<layout>100,150,623,399</layout>
+	<collapsed>0</collapsed>
+	<copyright>
+		<company>
+			<name>Yujin Robot</name>
+			<phone />
+			<address />
+      <homepage>http://www.yujinrobot.com/</homepage>
+		</company>
+		<license_policy>LGPL</license_policy>
+	</copyright>
+	<execution_environment>
+		<library_type>dll</library_type>
+		<library_name>KobukiWheelDropSensorComp.dll</library_name>
+		<impl_language>MSVC C++</impl_language>
+		<compiler>MSVC</compiler>
+		<app_domain />
+		<app_robot />
+	</execution_environment>
+	<execution_semantics>
+		<type>periodic</type>
+		<period>100</period>
+		<priority>5</priority>
+		<instance_creation>multiple</instance_creation>
+	</execution_semantics>
+	<properties>
+		<property name="ApiName" type="std::string">ApiName</property>
+		<property name="Version" type="std::string">1.1</property>
+	</properties>
+	<data_type_list />
+	<defined_data_types />
+	<defined_service_types>
+		<defined_service_type>KobukiWheelDropSensorService.xml</defined_service_type>
+	</defined_service_types>
+	<exports />
+	<ports>
+		<service_port>
+			<name>KobukiWheelDropSensorService</name>
+			<description />
+			<type>KobukiWheelDropSensorService</type>
+			<usage>provided</usage>
+			<reference>KobukiWheelDropSensorService.xml</reference>
+			<layout>707,298,214,32</layout>
+		</service_port>
+		<data_port>
+			<name>wheelDropState</name>
+			<description />
+			<data_type>std::vector&lt; OPRoS::Bool &gt;</data_type>
+			<usage>output</usage>
+			<reference />
+			<layout>707,370,152,32</layout>
+		</data_port>
+	</ports>
+</component_profile>
+

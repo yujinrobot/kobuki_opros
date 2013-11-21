@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<component_profile>
+	<id>68bbbf1f-d626-44ef-89ee-2550337fa0d1</id>
+	<name>KobukiGoGo</name>
+	<version>1.0</version>
+	<layout>100,150,250,200</layout>
+	<collapsed>0</collapsed>
+	<copyright>
+		<company>
+			<name />
+			<phone />
+			<address />
+			<homepage />
+		</company>
+		<license_policy>LGPL</license_policy>
+	</copyright>
+	<execution_environment>
+		<library_type>dll</library_type>
+		<library_name>KobukiGoGo.dll</library_name>
+		<impl_language>MSVC C++</impl_language>
+		<compiler>MSVC</compiler>
+		<app_domain />
+		<app_robot />
+	</execution_environment>
+	<execution_semantics>
+		<type>periodic</type>
+		<period>100</period>
+		<priority>5</priority>
+		<instance_creation>singleton</instance_creation>
+	</execution_semantics>
+	<properties />
+	<data_type_list />
+	<defined_data_types />
+	<defined_service_types>
+		<defined_service_type>BeepControllerService.xml</defined_service_type>
+		<defined_service_type>LEDControllerService.xml</defined_service_type>
+		<defined_service_type>MobileControllerService.xml</defined_service_type>
+	</defined_service_types>
+	<exports />
+	<ports>
+		<service_port>
+			<name>BeepControllerServiceReq</name>
+			<description />
+			<type>BeepControllerService</type>
+			<usage>required</usage>
+			<reference>BeepControllerService.xml</reference>
+			<layout>334,169,197,32</layout>
+		</service_port>
+		<service_port>
+			<name>LEDControllerServiceReq</name>
+			<description />
+			<type>LEDControllerService</type>
+			<usage>required</usage>
+			<reference>LEDControllerService.xml</reference>
+			<layout>334,204,188,32</layout>
+		</service_port>
+		<service_port>
+			<name>MobileControllerServiceReq</name>
+			<description />
+			<type>MobileControllerService</type>
+			<usage>required</usage>
+			<reference>MobileControllerService.xml</reference>
+			<layout>334,241,205,32</layout>
+		</service_port>
+		<data_port>
+			<name>BumperSensorDataIn</name>
+			<description />
+			<data_type>std::vector&lt;OPRoS::Bool&gt;</data_type>
+			<usage>input</usage>
+			<reference />
+			<queueing_policy>FIFO</queueing_policy>
+			<queue_size>1</queue_size>
+			<layout>-50,174,166,32</layout>
+		</data_port>
+		<data_port>
+			<name>GyroSensorDataIn</name>
+			<description />
+			<data_type>std::vector&lt;OPRoS::GyroSensorData&gt;</data_type>
+			<usage>input</usage>
+			<reference />
+			<queueing_policy>FIFO</queueing_policy>
+			<queue_size>1</queue_size>
+			<layout>-31,210,147,32</layout>
+		</data_port>
+		<data_port>
+			<name>CliffSensorDataIn</name>
+			<description />
+			<data_type>std::vector&lt;OPRoS::Bool&gt;</data_type>
+			<usage>input</usage>
+			<reference />
+			<queueing_policy>FIFO</queueing_policy>
+			<queue_size>1</queue_size>
+			<layout>-23,246,139,32</layout>
+		</data_port>
+		<data_port>
+			<name>WheelDropSensorDataIn</name>
+			<description />
+			<data_type>std::vector&lt;OPRoS::Bool&gt;</data_type>
+			<usage>input</usage>
+			<reference />
+			<queueing_policy>FIFO</queueing_policy>
+			<queue_size>1</queue_size>
+			<layout>-70,282,186,32</layout>
+		</data_port>
+		<event_port>
+			<name>Kobuki0BtnEvtIn</name>
+			<description />
+			<data_type>OPRoS::Bool</data_type>
+			<usage>input</usage>
+			<layout>334,280,128,32</layout>
+		</event_port>
+		<event_port>
+			<name>Kobuki1BtnEvtIn</name>
+			<description />
+			<data_type>OPRoS::Bool</data_type>
+			<usage>input</usage>
+			<layout>334,318,128,32</layout>
+		</event_port>
+		<event_port>
+			<name>Kobuki2BtnEvtIn</name>
+			<description />
+			<data_type>OPRoS::Bool</data_type>
+			<usage>input</usage>
+			<layout>-12,318,128,32</layout>
+		</event_port>
+	</ports>
+</component_profile>
+

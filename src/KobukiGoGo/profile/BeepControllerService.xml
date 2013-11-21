@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<service_port_type_profile>
+	<service_port_type>
+		<type_name>BeepControllerService</type_name>
+		<method name="PlaySoundSequence" return_type="void" call_type="blocking">
+			<param index="1">
+				<name>sequenceID</name>
+				<type>int8_t</type>
+			</param>
+		</method>
+	</service_port_type>
+</service_port_type_profile>
+

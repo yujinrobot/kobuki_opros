@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<service_port_type_profile>
+  <service_port_type>
+    <type_name>BtnStateService</type_name>
+    <method name="GetBtnState" return_type="OPRoS::Bool" call_type="blocking" />
+  </service_port_type>
+</service_port_type_profile>
+
